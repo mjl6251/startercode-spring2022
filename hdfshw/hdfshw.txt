@@ -1,0 +1,44 @@
+#question1
+hdfs dfs -mkdir /user/mjl6251/hw_hdfs
+
+#question2
+hdfs dfs -put part-00000 /user/mjl6251/hw_hdfs
+hdfs dfs -put part-00001 /user/mjl6251/hw_hdfs
+hdfs dfs -put part-00002 /user/mjl6251/hw_hdfs
+hdfs dfs -put part-00003 /user/mjl6251/hw_hdfs
+
+#question3
+hdfs dfs -mv /user/mjl6251/hw_hdfs/part-00000 /user/mjl6251/hw_words
+hdfs dfs -mv /user/mjl6251/hw_hdfs/part-00001 /user/mjl6251/hw_words
+hdfs dfs -mv /user/mjl6251/hw_hdfs/part-00002 /user/mjl6251/hw_words
+hdfs dfs -mv /user/mjl6251/hw_hdfs/part-00003 /user/mjl6251/hw_words
+
+#question4
+hdfs dfs -rmr /user/mjl6251/hw_hdfs
+
+#question5
+hdfs dfs -tail /user/mjl6251/hw_words/part-00002
+
+#result:
+g with this cheerful and good-natured man.
+
+“To return to your ladies—I hear they are lovely. What a wretched idea
+to go and bury themselves in the steppes when the French army is in
+Moscow. What a chance those girls have missed! Your peasants, now—that’s
+another thing; but you civilized people, you ought to know us better
+than that. We took Vienna, Berlin, Madrid, Naples, Rome, Warsaw, all
+the world’s capitals.... We are feared, but we are loved. We are nice to
+know. And then the Emperor...” he began, but Pierre interrupted him.
+
+“The Emperor,” Pierre repeated, and his face suddenly became sad and
+embarrassed, “is the Emperor...?”
+
+“The Emperor? He is generosity, mercy, justice, order, genius—that’s
+what the Emperor is! It is I, Ramballe, who tell you so.... I assure you
+I was his enemy eight years ago. My father was an emigrant count.... But
+that man has vanquished me. He has taken hold of me. I could not resist
+the sight of the grandeur and glory with which he has covered France.
+
+#question6
+hdfs dfs -ls /user/mjl6251/hw_words/part-00001
+#result: -rw-r--r--   2 mjl6251 supergroup     821763 2022-03-28 23:19 /user/mjl6251/hw_words/part-00001
